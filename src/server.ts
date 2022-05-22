@@ -22,7 +22,7 @@ server.use(mainRoutes);
 
 // Rota default 404
 server.use((req, res) => {
-    res.send('página não encontrada')
+    res.render('pages/404')
 })
 
 server.listen(process.env.PORT, () => console.log(`Server is running http://localhost:${process.env.PORT}`));

@@ -14,7 +14,14 @@
             <div class="item--color">Cor: {{color}}</div>
             <div class="item--genre">Gênero: {{sex}}</div>
         </div>
-    {{/ list }}}}
+    {{/ list }}
 </div>
+
+{{^list}}
+    <div class="container no-list"
+        <h2>Não há imagens disponíveis nestas condições</h2>
+    </div>
+{{/list}}
+
 
 {{>partials/footer}}
